@@ -23,3 +23,12 @@
 - B: ciphertext triple-verified via snippets; typology QUANTIFIED (all '?' middle-slot; 94% name-initial first letters; 8x P-final cluster p~1e-4; RFP = Richard Franklin Powers exact; JSB+SDG = Bach's score signature). Prior art found: NCL article (Gale A159331538) had proposed RLS=Robert L. Schneider + sibling readings — my work is verification/quantification, not first discovery. Codon/aa readings eliminated computationally. Status PARTIAL.
 - A: premise verified (no published pass on 1918-22; Gillogly/Mahon=1926-36, Bean closed 2019). Site egress-blocked; delivered crawl/OCR-triage/attack pipeline instead; columnar+vigenere crackers validated on synthetics. Status NO ACCESS.
 - Next: REPORT.md, disclosure drafts, commit, push.
+
+## 2026-09-02T~21:15Z — REVERSAL AND SOLVE: the 1834 witness confirms the Vals solution
+- User pushed the 1834 Maitland Club Works scan (22.9MB) into the repo (all archive.org egress-blocked for the session).
+- p.417 (pdf 462): THE CYPHRAL DISTICH printed after the Proquiritations, with companion verse + "Parva peto" epigraph + FINIS. Page image read visually: L2 pos24 printed 38, NOT 33 (Schmeh/Vals transcription error).
+- CRITICAL DISCOVERY: the 1834 Proquiritations are ordered DIFFERENTLY from TCP A64608, with variant wording (mapping fixed by paragraph signatures K.F., P.O., N.Wa., ... — independent of any plaintext). Every replication attempt (reticuli-labs, and mine at commit 13fb67f) tested the TCP ordering — hence the false "10/64 infeasible".
+- Decode with stated rule against 1834 text: L1 32/32 immediately; total 62/64; the 2 residuals resolve with documented tokenization ("parol-breaking"=2 words @L2p15; "hinc inde"=1 unit @L2p17 — exactly the Vals footnote position; OCR 'hide'→'inde' repaired from page image). 64/64. verify_distich_1834.py asserts both lines.
+- Blind reproduction subagent launched (scan + printed numbers + rule only, no expected plaintext).
+- Octastich: NOT present anywhere in the 1834 volume (only number run in 470 pages is the distich). Source of Schmeh's 285-number transcription unknown → the actual open successor problem.
+- Lesson recorded: the refutation was sound arithmetic on the wrong witness. Textual traditions matter more than code.

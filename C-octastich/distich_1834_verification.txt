@@ -1,0 +1,80 @@
+======================================================================
+
+pos     sec(sig)  num  word -> letter
+  1  1(   K.F.)    5  'of' -> O
+  2  2(   P.O.)    3  'grant' -> G
+  3  3(  N.Wa.)   27  'of' -> O
+  4  4(   B.H.)   38  'desire' -> D
+  5  5( Yo.Bn.)   32  'uprightness' -> U
+  6  6( Bu.Ts.)   14  'part' -> P
+  7  7(   D.J.)   21  'him' -> H
+  8  8(   E.G.)    8  'of' -> O
+  9  9(  X.Ya.)   66  'latitude' -> L
+ 10 10( Ai.Bs.)    8  'dwells' -> D
+ 11 11(  V.Fs.)   70  'knavish' -> K
+ 12 12(  Ei.Z.)   39  'in' -> I
+ 13 13(   A.S.)    5  'name' -> N
+ 14 14( Gh.En.)    9  'greatest' -> G
+ 15 15(  Wh.Y.)   12  'culpable' -> C
+ 16 16(  T.Wi.)   18  'hitherto' -> H
+ 17 17( Wo.Kn.)    2  'Author' -> A
+ 18 18(   C.W.)    3  'reasons' -> R
+ 19 19(  M.Gs.)   56  'looked' -> L
+ 20 20(  L.Ch.)    5  'Scotland' -> S
+ 21 21(  V.Ye.)    1  'That' -> T
+ 22 22(   Q.O.)    7  'his' -> H
+ 23 23( Du.Th.)    3  'exemplary' -> E
+ 24 24( Au.Ps.)    2  'sublime' -> S
+ 25 25( Gu.Du.)   13  'ease' -> E
+ 26 26( Yi.Pn.)   19  'commerce' -> C
+ 27 27( Tm.Ou.)    3  'overthrow' -> O
+ 28 28(  R.Yu.)   25  'not' -> N
+ 29 29( Gn.We.)    9  'deserveth' -> D
+ 30 30(  Tu.J.)    3  'are' -> A
+ 31 31( Wu.Fn.)   16  'noble' -> N
+ 32 32( Tn.Vs.)    6  'desire' -> D
+LINE 1: OGODUPHOLDKINGCHARLSTHESECONDAND
+
+pos     sec(sig)  num  word -> letter
+  1  1(   K.F.)   25  'much' -> M
+  2  2(   P.O.)   15  'a' -> A
+  3  3(  N.Wa.)   13  'kept' -> K
+  4  4(   B.H.)    6  'equity' -> E
+  5  5( Yo.Bn.)   11  'hath' -> H
+  6  6( Bu.Ts.)   20  'is' -> I
+  7  7(   D.J.)    5  'meerly' -> M
+  8  8(   E.G.)    1  'That' -> T
+  9  9(  X.Ya.)    2  'he' -> H
+ 10 10( Ai.Bs.)   12  'expansed' -> E
+ 11 11(  V.Fs.)    1  'Seeing' -> S
+ 12 12(  Ei.Z.)   20  'usually' -> U
+ 13 13(   A.S.)   20  'paid' -> P
+ 14 14( Gh.En.)   49  'race' -> R
+ 15 15(  Wh.Y.)   20  'every' -> E
+ 16 16(  T.Wi.)   20  'made' -> M
+ 17 17( Wo.Kn.)   35  'English' -> E
+ 18 18(   C.W.)   33  'relished' -> R
+ 19 19(  M.Gs.)    4  'unwillingness' -> U
+ 20 20(  L.Ch.)    6  'less' -> L
+ 21 21(  V.Ye.)    8  'ecclesiastical' -> E
+ 22 22(   Q.O.)   35  'reach' -> R
+ 23 23( Du.Th.)    5  'of' -> O
+ 24 24( Au.Ps.)   38  'for' -> F
+ 25 25( Gu.Du.)    5  'the' -> T
+ 26 26( Yi.Pn.)    5  'have' -> H
+ 27 27( Tm.Ou.)   18  'into' -> I
+ 28 28(  R.Yu.)   10  'sustained' -> S
+ 29 29( Gn.We.)    3  'love' -> L
+ 30 30(  Tu.J.)   11  'actually' -> A
+ 31 31( Wu.Fn.)   32  'none' -> N
+ 32 32( Tn.Vs.)   42  'duely' -> D
+LINE 2: MAKEHIMTHESUPREMERULEROFTHISLAND
+======================================================================
+
+DECODED:
+  OGODUPHOLDKINGCHARLSTHESECONDAND
+  MAKEHIMTHESUPREMERULEROFTHISLAND
+
+64/64 positions verified:
+  O GOD UPHOLD KING CHARLS THE SECOND AND
+  MAKE HIM THE SUPREME RULER OF THIS LAND

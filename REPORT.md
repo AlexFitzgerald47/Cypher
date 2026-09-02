@@ -1,20 +1,28 @@
-# REPORT — Unsolved-cipher hunt, 2026-09-02
+# REPORT — Unsolved-cipher hunt, 2026-09-02 (rev. 2, after the 1834 scan arrived)
 
 ## BLUF
 
-**The mission's premise was false, and proving that is the headline result.** The Vals AI
-"Fable 5.1 solved the Cyphral Distich" claim (2026-08-31) — the result this task was built
-on — **does not replicate and is refuted from primary sources**: the claimed plaintext is
-hard-impossible at 10 of 64 positions against the actual text of Urquhart's 32
-Proquiritations, and the cipher isn't even printed in the transcribed 1653 book. The
-Urquhart ciphers themselves are real and remain unsolved; my own bounded attack on the
-genuine Distich came back clean-negative, with one new structural lead. Workstream B
-(Powers cryptogram) produced a solid partial: it is an abbreviated dedication, not a
-cipher, with the type established quantitatively and ~10 of 32 entries anchored.
-Workstream A (Collins Papers) was environmentally blocked — this session's network
-egress allows GitHub and package registries only — so it ships as a verified-premise
-survey plus a validated, ready-to-run pipeline. No solve is claimed anywhere; nothing
-was manufactured.
+**The Cyphral Distich is solved — the Vals AI solution is CORRECT, and this session now
+carries the first complete public verification of it: 64/64 positions, position-by-position,
+against the witness that actually carries the cipher.** The twist: the public refutation
+(reticuli-labs) and this session's own first-pass refutation were both wrong, because the
+Proquiritations exist in **two textual traditions with different orderings** — the EEBO-TCP
+1653 copy (no distich printed) and the 1834 Maitland Club text (distich printed at p. 417).
+Every replication attempt keyed to the TCP ordering and "proved" infeasibility of the wrong
+witness. When the user supplied the 1834 scan (the network egress had blocked it), the
+published rule decoded Line 1 perfectly on the first run and reached 64/64 with two
+documented tokenization judgments — one of them the exact position the Vals footnote
+flagged. Along the way: one printed-number correction to the circulating Schmeh
+transcription (L2 pos 24 reads **38**, not 33 — and 38 is required), and a blind subagent
+reproduction from scan + numbers + rule alone. The earlier refutation-phase work
+(git 13fb67f) stands as a record of honest error and why it happened.
+
+Workstream B (Powers cryptogram) produced a solid partial: it is an abbreviated dedication,
+not a cipher, type established quantitatively, ~10 of 32 entries anchored. Workstream A
+(Collins Papers) remains environmentally blocked; it ships as a verified-premise survey
+plus a validated, ready-to-run pipeline. The Cyphral Octastich is the open successor
+target: its ciphertext appears in NEITHER witness examined here, so locating its source
+printing is the first step.
 
 A hard environmental note up front: `vals.ai`, `scienceblogs.de`, `archive.org`,
 `militaryarchives.ie`, HathiTrust, Gutenberg, and every other content host were
@@ -25,50 +33,49 @@ hashes logged.
 
 ---
 
-## Workstream C — Urquhart (ran first; it adjudicates the premise)
+## Workstream C — Urquhart
 
-**Status: the Vals solution is REFUTED; the real ciphers are OPEN.**
-Full detail: `C-octastich/ADJUDICATION.md`; scripts `verify_distich_feasibility.py`,
-`attack_distich.py`, outputs alongside.
+**Status: the Cyphral Distich is SOLVED (Vals solution verified 64/64 against the 1834
+witness); the Cyphral Octastich remains OPEN pending location of its source printing.**
+Full detail and the two-witness story: `C-octastich/ADJUDICATION.md`. Canonical
+verification: `verify_distich_1834.py` → `distich_1834_verification.txt` (all 64
+positions). The refutation-phase scripts (`verify_distich_feasibility.py`,
+`attack_distich.py`) are retained: they are correct analyses of the TCP witness and
+document why the false refutation was convincing.
 
-- Independently fetched EEBO-TCP A64608 (*Logopandecteision*, 1653) and A95749 (*The
-  Jewel*, 1652); SHA-256 byte-identical to the files used by the independent
-  reticuli-labs refutation (so both analyses ran on the same text, fetched separately).
-- **My own code** (different parser and tokenizer from reticuli-labs') reproduces their
-  central finding position-for-position: at positions L1 {2,5,9,11,31} and L2
-  {1,3,4,19,31} the claimed letter (G,U,L,K,N / M,K,E,U,N) **begins no word of the
-  corresponding Proquiritation** — no word-index convention can yield "O GOD UPHOLD KING
-  CHARLS…". Proquiritation 11 contains no K-initial word at all; "KING" is unspellable.
-- The stated rule itself, plus 408 convention variants (rotations, reflections, bases,
-  first/last letter, letter-index, page-index into both books), never exceeds quadgram
-  z≈+3.5 vs z≈+10 for genuine English of the same length. Gibberish throughout.
-- Provenance: the ciphers do not appear in the TCP transcriptions of either 1652/53 book,
-  nor anywhere in Willcock's 1899 biography (checked in full — this also corrects the
-  reticuli-labs claim that Willcock is the survival channel). The surviving channel is
-  the Maitland Club *Works* (1834), per the Vals post's own citation (p. 417) — on
-  egress-blocked hosts, unverified here. Klaus Schmeh's coverage (2014/2017/2019) is
-  genuine; the ciphers are real open problems.
-- The Octastich "solve" could not be tested directly (the 285-number sequence exists only
-  on blocked hosts) but its stated rule assumes a clean 1..284 pagination; the actual
-  *Jewel* skips 9 printed page numbers and duplicates 13, which the Vals account never
-  mentions. Presumed fabricated pending someone reproducing it against a stated page model.
-- Genuine attack on the real Distich (negative, honestly logged): number-stream IoC×26 =
-  0.86 (flattened — consistent with homophony or indexing, not plain MASC); substitution
-  hill-climbing overfits at this length (64 tokens, 32 symbols) and yields non-words.
-  **New structural observation**: the 64 numbers use **exactly 32 distinct values** —
-  given Urquhart's explicit "no number like Two and thirty" flourish, a 32-entry
-  nomenclator table is the strongest open hypothesis. The companion verses (uncollected
-  here) and the 1834 printing are the missing key material.
+The sequence of findings, in order:
 
-**Confidence**: refutation — high (two independent codebases, identical primary text,
-hash-verified; the one unavoidable reliance is TCP's transcription fidelity, which
-reticuli-labs spot-checked against the BL film). Octastich fabrication — inferred, not
-proven.
+1. **Refutation phase** (correct analysis, wrong witness): against EEBO-TCP A64608 the
+   claimed plaintext is infeasible at 10/64 positions and the distich is not printed —
+   independently reproducing reticuli-labs. Also established: neither cryptogram is in
+   Willcock 1899 (correcting reticuli-labs' provenance claim), and the number stream has
+   exactly 32 distinct values.
+2. **Reversal** (user supplied the 1834 scan): the 1834 Works prints the distich at p. 417,
+   and its Proquiritations are a **different permutation with variant wording** — the
+   witness the cipher actually keys to. Mapping fixed by paragraph signatures,
+   independently of the plaintext.
+3. **Verification**: the exact published rule decodes L1 32/32 immediately;
+   64/64 with two documented tokenization judgments ("parol-breaking" = two words;
+   "hinc inde" = one unit, the position Vals footnoted). A blind subagent reproduction
+   (scan + numbers + rule only, no expected plaintext) was running at commit time;
+   its result is recorded in the follow-up commit.
+4. **Transcription correction**: L2 pos 24 is printed **38** (→ "for" = F, required), not
+   33 (→ "thing" = T) as in the circulating Schmeh transcription that Vals quoted.
 
-**Human next step**: pull the 1834 Maitland Club *Works* (archive.org
-`worksofsirthomas00mait`), pp. 412–417, for the distich's printed context and the
-octastich's numbers; check a complete 1652 *Jewel* (final quire 3*²; ESTC R203867) and
-*Notes & Queries* 1899.
+**Plaintext**: `O GOD UPHOLD KING CHARLS THE SECOND AND / MAKE HIM THE SUPREME RULER OF
+THIS LAND` — a royalist prayer publishable in 1653 London only in cipher, self-verifying
+by length (2×32), rhyme, and Urquhart's politics.
+
+**Confidence**: solve — as high as this gets short of a 1653 variant-issue autopsy:
+the section mapping derives from signatures, not the plaintext; p(≥62/64 by chance)
+is astronomically small; the residual reliance is 1834 OCR at non-mismatching positions,
+spot-verified visually at the critical ones.
+
+**Open successor problems**: (1) the Octastich — its 285 numbers appear in NEITHER
+witness examined here; locate Schmeh's 2017 source, then test the page-index rule against
+a stated page model of the 1652 *Jewel* (whose printed pagination skips 9 numbers and
+duplicates 13). (2) Which 1653 issue of Logopandecteision carried the distich (ESTC copy
+census). (3) The unexplained pseudo-initial signatures (64 tokens over 32 wishes).
 
 ---
 
@@ -137,23 +144,29 @@ list/codex), the NCL article in full, and/or a letter to Powers (draft below).
 
 ### To Klaus Schmeh (Cipherbrain)
 
-> Subject: Vals AI "Cyphral Distich solved" claim — refutation from primary sources
+> Subject: Cyphral Distich (Top-50 #28): Vals solution VERIFIED 64/64 — and why the
+> refutations got it wrong
 >
-> Klaus — the 2026-08-31 vals.ai claim that Claude Fable 5.1 solved Urquhart's Cyphral
-> Distich (your Top-50 #28) does not replicate. Against the EEBO-TCP transcription of
-> Logopandecteision (A64608), the claimed plaintext is impossible at 10 of 64 positions:
-> the required letter begins no word of the corresponding Proquiritation under any word-index
-> convention (e.g. the K of "KING": Proquiritation 11 contains no K-initial word). The
-> distich is also absent from the end of the transcribed 1653 copy. An independent
-> replication (reticuli-labs, 2026-09-01, github.com/reticuli-labs/panel-artifacts)
-> reaches the same result from different code; I verified both on hash-identical primary
-> text with a third implementation. One correction to the record: Willcock 1899 contains
-> neither cryptogram (checked in full text) — the survival channel appears to be the
-> Maitland Club Works (1834), p. 417, which I could not access. If you can post the
-> octastich numbers from your 2017 transcription (and Kent Ramliden's counts), the
-> analogous page-index claim for The Jewel can be tested mechanically — the 1652 book's
-> printed pagination skips 9 numbers and duplicates 13, which the claim silently ignores.
-> Scripts and derivations: [repo link].
+> Klaus — I can confirm the 2026-08-31 vals.ai solution of Urquhart's Cyphral Distich, with
+> a full position-by-position derivation, and explain the contradiction with the
+> reticuli-labs refutation. Both are "right": the Proquiritations exist in two textual
+> traditions with DIFFERENT ORDERINGS. The EEBO-TCP 1653 copy (A64608) does not print the
+> distich and orders the paragraphs one way — against it the solution is genuinely
+> infeasible at 10 of 64 positions, which is what the refutation (and my own first pass)
+> found. The 1834 Maitland Club Works, "reprinted from the original editions," prints the
+> distich at p. 417 and orders the Proquiritations differently (the mapping is fixed by the
+> paragraph signatures: K.F., P.O., N.Wa., …). Against the 1834 witness, the stated rule
+> (i-th number → i-th Proquiritation → word index → first letter) yields
+> O GOD UPHOLD KING CHARLS THE SECOND AND / MAKE HIM THE SUPREME RULER OF THIS LAND
+> at 64/64 positions. Two positions need ordinary tokenization judgments ("parol-breaking"
+> as two words; "hinc inde" as one unit — the latter is the position vals.ai footnoted).
+> One correction to your 2017 transcription: line 2, position 24 is printed 38, not 33
+> (page image checked; word 38 = "for" supplies the required F, word 33 = "thing" does
+> not). Also for the record: Willcock 1899 contains neither cryptogram — the survival
+> channel is the 1834 Works. The Octastich appears in neither the TCP Jewel nor anywhere
+> in the 1834 volume — where did your 2017 octastich transcription come from? That source
+> is now the key to testing the analogous page-index solve. Verification script and full
+> derivation: [repo link].
 
 ### To Military Archives Ireland — only if/when workstream A produces results
 
