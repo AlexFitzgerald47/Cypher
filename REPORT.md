@@ -13,8 +13,10 @@ witness. When the user supplied the 1834 scan (the network egress had blocked it
 published rule decoded Line 1 perfectly on the first run and reached 64/64 with two
 documented tokenization judgments — one of them the exact position the Vals footnote
 flagged. Along the way: one printed-number correction to the circulating Schmeh
-transcription (L2 pos 24 reads **38**, not 33 — and 38 is required), and a blind subagent
-reproduction from scan + numbers + rule alone. The earlier refutation-phase work
+transcription (L2 pos 24 reads **38**, not 33 — and 38 is required), and a completed blind
+subagent reproduction from scan + numbers + rule alone — same plaintext, 61/64 strict,
+64/64 under one uniform hyphen convention plus the "hinc inde" unit
+(`C-octastich/blind_reproduction_report.md`). The earlier refutation-phase work
 (git 13fb67f) stands as a record of honest error and why it happened.
 
 Workstream B (Powers cryptogram) produced a solid partial: it is an abbreviated dedication,
@@ -57,8 +59,9 @@ The sequence of findings, in order:
 3. **Verification**: the exact published rule decodes L1 32/32 immediately;
    64/64 with two documented tokenization judgments ("parol-breaking" = two words;
    "hinc inde" = one unit, the position Vals footnoted). A blind subagent reproduction
-   (scan + numbers + rule only, no expected plaintext) was running at commit time;
-   its result is recorded in the follow-up commit.
+   (scan + numbers + rule only, no expected plaintext) independently derived the same
+   message and judged the rule confirmed — see
+   `C-octastich/blind_reproduction_report.md`.
 4. **Transcription correction**: L2 pos 24 is printed **38** (→ "for" = F, required), not
    33 (→ "thing" = T) as in the circulating Schmeh transcription that Vals quoted.
 

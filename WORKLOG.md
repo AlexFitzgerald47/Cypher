@@ -32,3 +32,7 @@
 - Blind reproduction subagent launched (scan + printed numbers + rule only, no expected plaintext).
 - Octastich: NOT present anywhere in the 1834 volume (only number run in 470 pages is the distich). Source of Schmeh's 285-number transcription unknown → the actual open successor problem.
 - Lesson recorded: the refutation was sound arithmetic on the wrong witness. Textual traditions matter more than code.
+
+## 2026-09-02T~21:40Z — Blind reproduction complete; solve finalized
+- Independent subagent (scan + numbers + rule only, no expected plaintext, derivation files off-limits) mechanically derived the same message: 61/64 strict, 64/64 with hyphen-compound-as-two-words (resolves L1p19 church-man->looked and L2p15 parol-breaking->every; touches no other used index, verified exhaustively) + "hinc inde" as one unit (L2p17). Verdict: "rule confirmed... chance of 61 exact matches from an incorrect rule is nil."
+- Full table in C-octastich/blind_reproduction_report.md. Docs updated. Solve stands: O GOD UPHOLD KING CHARLS THE SECOND AND / MAKE HIM THE SUPREME RULER OF THIS LAND.

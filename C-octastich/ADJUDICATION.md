@@ -59,8 +59,12 @@ Vals post quoted an input containing an error its own claimed plaintext contradi
 sloppy presentation, but immaterial to the solve's correctness.)
 
 Blind reproduction: a subagent given only the scan, the printed numbers, and the rule — not
-the expected plaintext — was launched; its result is recorded in WORKLOG / the follow-up
-commit.
+the expected plaintext — independently derived the same message (61/64 strict, 64/64 under
+the hyphen-compound convention + "hinc inde" unit) and judged the rule confirmed:
+`blind_reproduction_report.md`. It also identified a third convention-resolved position
+this file's first draft passed over silently (L1 pos 19: "church-man" as two words →
+"looked" → L), because the canonical script's tokenizer splits hyphenated compounds by
+default — the same single convention resolving all of L1-19 and L2-15.
 
 ## Historical note
 
