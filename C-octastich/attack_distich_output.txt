@@ -1,0 +1,30 @@
+LM corpus letters: 521656
+null quadgram score mean=-6.649 sd=0.273 max=-5.642
+real-English 64-char windows: mean=-3.887 (z=10.1)
+
+=== Approach A: 408 scored conventions; top 15 ===
+z= +3.5 ?= 0 proq letteridx rot2 refl1 base0                  otetsmietneagehoarothntenbieatteynultreetshisallhithuthtggetihau
+z= +3.1 ?= 4 proq sec=pos rot29 refl0 base1 last              ryd?eeed?t?eonnhen?rtssenslotsenterseemtergydreotesnnaoedteeweff
+z= +3.1 ?= 0 proq letteridx rot12 refl0 base1                 taedaslhehatnrtheastttaheeeheeyhweuhsershasndriansthhstasntmebei
+z= +3.0 ?= 0 proq letteridx rot9 refl1 base1                  newebhyhestenttieatnttehalecoaygtnegtntthhtserienoigehrietotareh
+z= +2.8 ?= 2 proq sec=pos rot31 refl0 base1 last              sentptst?osaytheeefdgrsefswhoefeeteoyeegeegmeasyntdshedeleteogf?
+z= +2.8 ?= 0 proq letteridx rot4 refl0 base1                  sewotngsealgeeonhetssvesreasoamuareguputhotlontirtiuaantntosavnh
+z= +2.8 ?= 1 proq sec=pos rot28 refl1 base0 last              neesgatgoe?sgeeregdletsesewndtedoetesstesmeelnosedolseeeeofneege
+z= +2.8 ?= 1 proq sec=pos rot25 refl1 base1 last              elesyeynfl?dneysetletrooenythoedoestoddtgmesoumdednedlysessdeywe
+z= +2.7 ?= 0 proq letteridx rot6 refl1 base0                  gtoiedsnfetyoyaaethbhitebitesiofasheeshharsgsndimoneeshahhafithe
+z= +2.6 ?= 0 proq letteridx rot18 refl0 base0                 bihhtuirhtgepsooatrgehieirtlstaeesatadgseneshesemustotgothehaonw
+z= +2.5 ?= 4 proq sec=pos rot10 refl1 base0 last              ehrofdme?e??ermlwd?serseetsemettstedfeeyeeseftoftsldseneenefgtdn
+z= +2.5 ?= 2 proq sec=pos rot31 refl1 base1 last              fnsewtne?esedesasreyetreooeneeneonnneretentdtytoetehytndfeeeoef?
+z= +2.5 ?= 3 proq sec=pos rot18 refl0 base0 last              sstteett?oetedefoh?emnhsleedeserodneottesmefe?dostfohrlrehregmty
+z= +2.4 ?= 0 proq letteridx rot0 refl0 base1                  haprbonhlerbtudihafnttehscemeanhehoutanseotrimhlniigeononeeheame
+z= +2.4 ?= 3 proq sec=pos rot5 refl0 base0 last               enrenedt?t?serftsf?teyeemlenfkmsonelhtheryeeydmseyletendeennwdae
+
+=== Approach B ===
+distinct symbols: 32 over 64 tokens
+most common: [(5, 7), (3, 6), (20, 5), (8, 3), (2, 3), (1, 3), (6, 3), (32, 2)]
+IoC (x26): 0.86  (English MASC ~1.7x26/26≈1.73; flat homophonic ->26/len)
+MASC hill-climb best: z=+11.2
+L1: treaseditingtotheretheremortorse
+L2: timesethetheeseenateintatthersso
+NOTE: 64 tokens is far below unicity distance for 47-symbol substitution;
+a high z here does NOT validate a solve — it must read as a meaningful distich.

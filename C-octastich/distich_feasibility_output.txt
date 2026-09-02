@@ -1,0 +1,38 @@
+input sha256: a99c64baa51ab09e97118069a2dfa110dd4df2c7267f45d7c9b4322df741a3a0
+pos #words  L1 need/ok   L2 need/ok
+  1     34   O ok        M NO
+  2     40   G NO        A ok
+  3     45   O ok        K NO
+  4     46   D ok        E NO
+  5     48   U NO        H ok
+  6     58   P ok        I ok
+  7     71   H ok        M ok
+  8     45   O ok        T ok
+  9     66   L NO        H ok
+ 10     76   D ok        E ok
+ 11     82   K NO        S ok
+ 12     49   I ok        U ok
+ 13     76   N ok        P ok
+ 14     66   G ok        R ok
+ 15     50   C ok        E ok
+ 16     49   H ok        M ok
+ 17     68   A ok        E ok
+ 18     58   R ok        R ok
+ 19     66   L ok        U NO
+ 20     92   S ok        L ok
+ 21     76   T ok        E ok
+ 22     98   H ok        R ok
+ 23     64   E ok        O ok
+ 24     46   S ok        F ok
+ 25     95   E ok        T ok
+ 26     48   C ok        H ok
+ 27     64   O ok        I ok
+ 28     67   N ok        S ok
+ 29    102   D ok        L ok
+ 30     49   A ok        A ok
+ 31     39   N NO        N NO
+ 32     38   D ok        D ok
+
+Line1 infeasible: [(2, 'G'), (5, 'U'), (9, 'L'), (11, 'K'), (31, 'N')]
+Line2 infeasible: [(1, 'M'), (3, 'K'), (4, 'E'), (19, 'U'), (31, 'N')]
+total infeasible positions: 10 of 64
