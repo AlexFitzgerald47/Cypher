@@ -36,3 +36,8 @@
 ## 2026-09-02T~21:40Z — Blind reproduction complete; solve finalized
 - Independent subagent (scan + numbers + rule only, no expected plaintext, derivation files off-limits) mechanically derived the same message: 61/64 strict, 64/64 with hyphen-compound-as-two-words (resolves L1p19 church-man->looked and L2p15 parol-breaking->every; touches no other used index, verified exhaustively) + "hinc inde" as one unit (L2p17). Verdict: "rule confirmed... chance of 61 exact matches from an incorrect rule is nil."
 - Full table in C-octastich/blind_reproduction_report.md. Docs updated. Solve stands: O GOD UPHOLD KING CHARLS THE SECOND AND / MAKE HIM THE SUPREME RULER OF THIS LAND.
+
+## 2026-09-03T~03:15Z — Workstream D: McGuire postcard + 1927 IRA message adjudicated
+- User pushed both Schmeh post PDFs + card photos. 1927 IRA message (Schmeh 2018): SOLVED in comments by Richard Bean, Aug 2019 (width-12 columnar, column 11 dropped; Gillogly endorsed) — struck from target list.
+- Postcard: 2019 comment thread (SantaColoma + x3Ray) already read the message ("Dear Paddy... hope you are set as I am... this coming Easser. Yours, David"); no key table ever published. My pass: confirmed substitution consistency (O-glyph identical in HOPE/YOU), ruled out ogham and standard futhark (private runic-style alphabet), verified the reading against better crops. Residuals are scan-resolution-bound: full key table, line-initial glyphs, crossed-out chars on lines 7-8. Time-boxed per mission rules rather than forcing error-prone glyph calls.
+- Closing action defined: 600-dpi scan from Stephen Coyle / McGuire family.

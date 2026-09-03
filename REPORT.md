@@ -129,6 +129,28 @@ list/codex), the NCL article in full, and/or a letter to Powers (draft below).
 
 ---
 
+## Workstream D — The McGuire postcard, 1920 (added after the Irish follow-up)
+
+**Status: SUBSTANTIALLY READ (2019 prior art confirmed and extended).** See
+`D-postcard/FINDINGS.md`. The 2019 comment-thread reading ("Dear Paddy… hope you are set
+as I am… this coming Easter. Yours, David") stands against better images; the substitution
+is internally consistent; the system is a private runic-style straight-stroke alphabet
+(not ogham). Residuals are resolution-bound: a complete key table, the line-initial
+glyphs, and the crossed-out characters — closable with a 600-dpi scan from the family via
+historian Stephen Coyle. Companion adjudication: the 1927 IRA message (Schmeh 2018) was
+solved by Richard Bean in 2019 and is off the open list.
+
+### To Stephen Coyle (draft, via the contact on his published work)
+
+> Dear Mr. Coyle — regarding the enciphered 1920 Easter postcard to Patrick James McGuire
+> you shared with Klaus Schmeh in 2019: the comment-thread reading (SantaColoma/x3Ray) is
+> substantially correct, and I can confirm the cipher is a consistent one-for-one symbol
+> substitution in a private runic-style alphabet. What was never produced is the complete
+> key table and the recovery of the corrected/crossed-out passages — both achievable from
+> a 600-dpi scan of the message side, which no one has had. If the family can provide one,
+> I will return a full transcription, the key table, and notes; "David" may then be
+> identifiable from Scottish Brigade rolls. Happy for the family to have this first.
+
 ## Given another day
 
 1. **Re-run workstream A from an unrestricted network.** It remains the highest-upside
